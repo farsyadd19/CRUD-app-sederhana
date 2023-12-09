@@ -1,0 +1,109 @@
+body {
+    color: #fff;
+    background-color: #1d2630;
+    font-family: 'Arial', sans-serif;
+}
+
+.main {
+    animation: fadeIn 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efek Hover pada Tombol dan Link */
+.btn,
+a {
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Tombol Success */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Tombol Danger */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+/* Tombol Warning */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    background-color: #d39e00;
+    border-color: #d39e00;
+}
+
+/* Form Input */
+input.form-control {
+    margin-bottom: 10px;
+}
+
+/* Efek Hover pada Tabel */
+table {
+    border-radius: 8px;
+}
+
+table:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+table thead {
+    background-color: #343a40;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #495057;
+}
+
+table tbody tr:hover {
+    background-color: #343a40;
+}
+
+.animated-3d {
+    animation: spin 3s infinite linear;
+    transition: transform 0.3s ease;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
